@@ -62,3 +62,12 @@ export interface TaxHistory {
     total: number;
   };
 }
+
+export interface FilterCriteria {
+  minCapRate: number;
+  maxCapRate: number;
+  minCashFlow: number;
+  maxCashFlow: number;
+  condition: string;
+  strategy: string;
+}

@@ -1,3 +1,14 @@
+import { Card } from './ui/Card';
+import { Title } from './ui/Title';
+import { Grid } from './ui/Grid';
+import { FinancialMetrics } from './FinancialMetrics';
+import { RenovationCalculator } from './RenovationCalculator';
+import { MortgageCalculator } from './MortgageCalculator';
+import { TaxHistory } from './TaxHistory';
+import { ComparableProperties } from './ComparableProperties';
+import { RentalAnalysis } from './RentalAnalysis';
+import { Property } from '../types';
+
 const PropertyAnalysis: React.FC<{property: Property}> = ({property}) => {
   return (
     <Card>

@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import { FilterCriteria } from '../types';
+import { Card } from './ui/Card';
+import { Title } from './ui/Title';
+import { RangeSlider } from './ui/RangeSlider';
+import { Select } from './ui/Select';
 
 interface FilterProps {
   onFilterChange: (filters: FilterCriteria) => void;

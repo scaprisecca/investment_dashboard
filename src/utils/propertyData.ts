@@ -7,7 +7,7 @@ const cleanNumber = (str: string): number => parseFloat(str.replace(/[^0-9.-]+/g
 // Parse the CSV data into Property objects
 export const parsePropertyData = (csvData: string): Property[] => {
   const lines = csvData.split('\n');
-  const [header, ...dataRows] = lines;
+  const [_, ...dataRows] = lines;
 
   const properties = dataRows
     .filter(line => line.trim() !== '')
